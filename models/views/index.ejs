@@ -1,0 +1,38 @@
+
+  
+     
+    
+
+<html
+
+
+
+<h2>Registros en la base de datos</h2>
+
+<table class ="table">
+  <caption class = "text-center"></caption>
+  <thead>
+<tr>
+  <th>Nombre</th>
+  <th>Apellido</th>
+  <th>Celular</th>
+  <th>Mision</th>
+  <th>email</th>
+
+</tr>
+
+  </thead>
+
+<% for (var i = 0; i < registros.length; i++){ %>
+
+  <tr>
+    <td> <%= i + 1 %></td>
+    <td> <%= Registros[i].nombre %></td>
+    <td> <%= Registros[i].Apellido %></td>
+    <td> <%= Registros[i].Celular%></td>
+    <td> <%= Registros[i].Mision %></td>
+    <td> <%= Registros[i].email %></td>
+  </tr>
+  <% } %>
+
+</html>
